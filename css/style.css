@@ -1,0 +1,470 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stile del Body */
+body {
+    font-family: sans-serif;
+    background-color: #131316;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #131316;
+    padding: 10px 20px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Stile del Logo */
+.fa-youtube {
+    font-size: 35px;
+    color: red;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+/* Stile della Navbar */
+.navbar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Stile della parte sinistra della Navbar */
+.navbar .navbar-left {
+    flex-basis: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
+}
+
+/* Stile della parte centrale della Navbar */
+.navbar .navbar-center {
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stile del box della barra di ricerca*/
+.box {
+    width: 65%;
+}
+
+/* Stile della barra di ricerca*/
+.box .search-box {
+    height: 50px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+/* Stile dell'input della barra di ricerca*/
+.search-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background: lightgrey;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+/* Stile dell'icona della barra di ricerca*/
+.search-box .icon {
+    position: absolute;
+    right: -2px;
+    top: 0;
+    width: 50px;
+    background: grey;
+    height: 100%;
+    border-radius: 0 25px 25px 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Stile di sfondo delle icone*/
+.icon-background {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Stile di sfondo delle icone in Hover*/
+.icon-background:hover {
+    text-shadow: 0px 0px 0px black;
+}
+
+/* Stile della parte destra della Navbar */
+.navbar .navbar-right {
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Stile del titolo */
+h1 {
+    font-size: 30px;
+}
+
+/* Stile dell'apice del titolo */
+sup {
+    font-size: 15px;
+    color: gray;
+    font-weight: normal;
+}
+
+/* Stile della riga */
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+/* Stile delle colonne */
+[class^='col-'] {
+    min-height: 30px;
+}
+
+/*Colonna da 70*/
+.col-70 {
+    flex-basis: 70%;
+}
+
+/*Colonna da 30*/
+.col-30 {
+    flex-basis: 30%;
+}
+
+/* Stile del video corrente */
+.current-video {
+    background-image: url('../img/main.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+}
+
+/* Stile dei controlli del video corrente */
+.current-video .controls {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    padding-left: 20px;
+    line-height: 50px;
+}
+
+/* Icona del play */
+.controls .fa-play {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+/* Icona del play in Hover*/
+.controls .fa-play:hover {
+    text-shadow: 0 0 10px white;
+}
+
+/* Stile della barra */
+.progress-bar {
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 100%;
+    cursor: pointer;
+}
+
+/* Stile del progresso della barra */
+.progress-bar .value {
+    background-color: red;
+    height: 100%;
+    width: 30%;
+    border-radius: 0 2px 2px 0;
+    position: relative;
+}
+
+/* Stile del maker della barra */
+.progress-bar .marker {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    border: 5px solid lightgrey;
+    box-shadow: 0 0 1px grey;
+    display: none;
+}
+
+/* Stile del maker della barra in Hover */
+.current-video:hover .marker {
+    display: block;
+}
+
+.related-videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Card del video relativo */
+.related-card {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    color: lightgray;
+    border-radius: 2px;
+    border: 1px solid #131316;
+    cursor: pointer;
+}
+
+.related-card:hover {
+    border: 1px solid #d0d0d0;
+}
+
+/* Tag a delle Card del video relativo */
+.related-card a {
+    color: lightgray;
+    text-decoration: none;
+    font-style: normal;
+}
+
+/* Area immagine */
+.thumb {
+    flex-basis: 40%;
+    height: 78px;
+    width: 125px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Informazioni */
+.info {
+    flex-basis: 60%;
+    padding-left: 5px;
+}
+
+/* Immagini */
+.thumb img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Titoletto delle card */
+h4 {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.related-card address {
+    margin-bottom: 5px;
+}
+
+/* Stile della sezione sotto il video principale */
+.under-video-controls {
+    margin-top: 25px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Stile del titolo del video principale */
+.title-video {
+    flex-basis: 30%;
+}
+
+.title-video h1 {
+    font-size: 30px;
+    color: white;
+}
+
+/* Stile dell'area sottostanta al video principale */
+.iteration-area {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Area di sinistra dell'interazione */
+.iteration-left {
+    flex-basis: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Area di destra dell'interazione */
+.iteration-right {
+    flex-basis: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Stile di sfondo delle icone*/
+.icon-background-under-video {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px black;
+    border: 1px solid white;
+}
+
+.icon-background-under-video img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+}
+
+/* Bottoni nell'area sotto al video */
+.button-under-video{
+    background-color: grey;
+    flex-basis: 15%;
+    border-radius: 25px;
+    height: 55%;
+    padding: 10px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px black;
+}
+
+.button-under-video i {
+    color: white;
+}
+
+.button-under-video:hover {
+    text-shadow: 0 0 10px white;
+}
+
+.button-under-video p {
+    color: white;
+    padding: 0 5px;
+}
+
+.small-button-under-video {
+    background-color: grey;
+    flex-basis: 10%;
+    border-radius: 25px;
+    height: 50%;
+    margin: 0 10px;
+}
+
+/* Pollice in alto in Hover */
+.fa-thumbs-up:hover {
+    color: greenyellow;
+}
+
+/* Pollice in basso in Hover */
+.fa-thumbs-down:hover {
+    color: red;
+}
+
+/* Stile delle info del del profilo autore del video */
+.profile-info {
+    flex-basis: calc(100%/2);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 5px;
+}
+
+/* Stile del nome del profilo autore del video */
+.profile-name {
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+/* Stile dei dati da parte al nome del profilo autore del video */
+.profile-subscriver {
+    font-size: 12.5px;
+}
+
+/* Stile dell'area descrittiva */
+.description-area {
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Stile dell'area descrittiva in alto */
+.description-top {
+    flex-basis: 30%;
+}
+
+/* Stile del tag span dell'area descrittiva in alto */
+.description-top span {
+    padding: 5px;
+}
+
+/* Stile del tag span dell'area descrittiva in basso */
+.description-down span {
+    padding: 5px;
+}
+
+/* Stile dell'area descrittiva in basso */
+.description-down {
+    flex-basis: 60%;
+}
+
+/* Stile della classe bold */
+.bold {
+    font-weight: bold;
+}
+
+/* Stile della classe hashtag */
+.hashtag {
+    color: blue;
+}

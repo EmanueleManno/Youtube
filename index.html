@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Informazioni aggiuntive-->
+    <meta name="keywords" content="esercizio,programmare,Youtube" />
+    <meta
+      name="description"
+      content="Vi illustro una riproduzione di Youtube"
+    />
+    <meta name="author" content="Emanuele Manno" />
+    <!--Titolo della pagina-->
+    <title>Youtube</title>
+    <!--Icona della pagina-->
+    <link rel="icon" href="./img/icona.png" type="image/png" />
+    <!--Importazione Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Importazione file CSS-->
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  </head>
+
+  <body>
+    <!--Header-->
+    <header>
+      <!--Navbar-->
+      <nav class="navbar">
+        <!--Sezione destra della Navbar-->
+        <div class="navbar-left">
+          <i class="fa-solid fa-bars fa-2x"></i>
+          <!--Icona-->
+          <i class="fab fa-youtube"></i>
+          <!--Titolo-->
+          <h1>Youtube <sup>IT</sup></h1>
+        </div>
+        <!--Sezione centrale della Navbar-->
+        <div class="navbar-center">
+          <!--Barra di ricerca-->
+          <div class="box">
+            <div class="search-box">
+              <input type="text" placeholder="Cerca" />
+              <label for="" class="icon">
+                <i class="fas fa-search"></i>
+              </label>
+            </div>
+          </div>
+          <!--Icona del microfono-->
+          <div class="icon-background">
+            <i class="fa-solid fa-microphone fa-2x"></i>
+          </div>
+        </div>
+        <!--Sezione destra della Navbar-->
+        <div class="navbar-right">
+          <!--Icona del video-->
+          <div class="icon-background">
+            <i class="fa-solid fa-video fa-2x"></i>
+          </div>
+          <!--Icona della campanellina-->
+          <div class="icon-background">
+            <i class="fa-regular fa-bell fa-2x"></i>
+          </div>
+          <!--Icona dell'utente-->
+          <div class="icon-background">
+            <i class="fa-regular fa-user fa-2x"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Main-->
+    <main>
+      <!--Contenitore-->
+      <div class="container">
+        <!--Riga-->
+        <div class="row">
+          <!--Colonna da 70-->
+          <div class="col-70">
+            <!--Video corrente-->
+            <div class="current-video">
+              <!--Area controlli-->
+              <div class="controls">
+                <!--Icona del play-->
+                <i class="fas fa-play fa-2x"></i>
+                <!--Barra del progresso-->
+                <div class="progress-bar">
+                  <!--Valore-->
+                  <div class="value">
+                    <!--Marker-->
+                    <div class="marker"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Sezione del titolo del video e relativi comandi di interazione-->
+            <div class="under-video-controls">
+              <div class="title-video">
+                <h1>Mi sono appassionato al mondo della programmazione</h1>
+              </div>
+              <div class="iteration-area">
+                <!--Parte di sinistra-->
+                <div class="iteration-left">
+                  <!--Icona dell'utente-->
+                  <div class="icon-background-under-video">
+                    <img src="./img/utente.png" alt="user" />
+                  </div>
+                  <!--Info del profilo autore del video-->
+                  <div class="profile-info">
+                    <div class="profile-name">Emanuele Manno</div>
+                    <div class="profile-subscriver">325.000 iscritti</div>
+                  </div>
+                  <!--Tasto iscriviti-->
+                  <div class="button-under-video">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <p>Iscriviti</p>
+                  </div>
+                </div>
+                <!--Parte di destra-->
+                <div class="iteration-right">
+                  <!--Likes-->
+                  <div class="button-under-video">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <p>|</p>
+                    <i class="fa-solid fa-thumbs-down"></i>
+                  </div>
+                  <!--Share-->
+                  <div class="button-under-video">
+                    <i class="fa-solid fa-share"></i>
+                    <p>Condividi</p>
+                  </div>
+                  <!--Download-->
+                  <div class="button-under-video">
+                    <i class="fa-solid fa-download"></i>
+                    <p>Scarica</p>
+                  </div>
+                  <!--Clip-->
+                  <div class="button-under-video">
+                    <i class="fa-solid fa-scissors"></i>
+                    <p>Clip</p>
+                  </div>
+                  <!--Other-->
+                  <div class="button-under-video">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Area descrittiva-->
+            <div class="description-area">
+              <!--Parte in alto dell'area descrittiva-->
+              <div class="description-top">
+                <span class="bold">1.285.000 Visualizzazioni</span>
+                <span class="bold">20 ottobre 2023</span>
+                <span class="hashtag">#programmazione #passion #developer</span>
+              </div>
+              <!--Parte in basso dell'area descrittiva-->
+              <div class="description-down">
+                <span
+                  >Vi mostro come mi sono appassionato al mondo della
+                  programmazione</span
+                >
+              </div>
+            </div>
+          </div>
+          <!--Colonna da 30-->
+          <div class="col-30">
+            <!--Video relativo-->
+            <div class="related-videos">
+              <!--Card del video relativo-->
+              <div class="related-card">
+                <!--Immagine-->
+                <div class="thumb">
+                  <img src="./img/img-2.jpeg" alt="" />
+                </div>
+                <!--Informazioni relative-->
+                <div class="info">
+                  <h4>Mi piace programmare</h4>
+                  <address>Emanuele Manno</address>
+                  <div class="details">
+                    6.410 Visualizzazioni &middot; 1 giorno fa
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Video relativo-->
+            <div class="related-videos">
+              <!--Card del video relativo-->
+              <div class="related-card">
+                <!--Immagine-->
+                <div class="thumb">
+                  <img src="./img/img-3.jpeg" alt="" />
+                </div>
+                <!--Informazioni relative-->
+                <div class="info">
+                  <h4>Vi mostro il mio PC</h4>
+                  <address>Emanuele Manno</address>
+                  <div class="details">
+                    9.865 Visualizzazioni &middot; 3 giorni fa
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Video relativo-->
+            <div class="related-videos">
+              <!--Card del video relativo-->
+              <div class="related-card">
+                <!--Immagine-->
+                <div class="thumb">
+                  <img src="./img/img-7.jpeg" alt="" />
+                </div>
+                <!--Informazioni relative-->
+                <div class="info">
+                  <h4>Caffè del programmatore</h4>
+                  <address>Emanuele Manno</address>
+                  <div class="details">
+                    11.587 Visualizzazioni &middot; 8 giorni fa
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Video relativo-->
+            <div class="related-videos">
+              <!--Card del video relativo-->
+              <div class="related-card">
+                <!--Immagine-->
+                <div class="thumb">
+                  <img src="./img/img-4.jpeg" alt="" />
+                </div>
+                <!--Informazioni relative-->
+                <div class="info">
+                  <h4>Le mie debugging ducks</h4>
+                  <address>Emanuele Manno</address>
+                  <div class="details">
+                    14.124 Visualizzazioni &middot; 12 giorni fa
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Video relativo-->
+            <div class="related-videos">
+              <!--Card del video relativo-->
+              <div class="related-card">
+                <!--Immagine-->
+                <div class="thumb">
+                  <img src="./img/img-8.png" alt="" />
+                </div>
+                <!--Informazioni relative-->
+                <div class="info">
+                  <h4>Progetto di fine corso</h4>
+                  <address>Emanuele Manno</address>
+                  <div class="details">
+                    17.452 Visualizzazioni &middot; 20 giorni fa
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Video relativo-->
+            <div class="related-videos">
+              <!--Card del video relativo-->
+              <div class="related-card">
+                <!--Immagine-->
+                <div class="thumb">
+                  <img src="./img/img-1.jpeg" alt="" />
+                </div>
+                <!--Informazioni relative-->
+                <div class="info">
+                  <h4>Il mio gatto programma</h4>
+                  <address>Emanuele Manno</address>
+                  <div class="details">
+                    20.772 Visualizzazioni &middot; 1 mese fa
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Video relativo-->
+            <div class="related-videos">
+              <!--Card del video relativo-->
+              <div class="related-card">
+                <!--Immagine-->
+                <div class="thumb">
+                  <img src="./img/codice.jpg" alt="" />
+                </div>
+                <!--Informazioni relative-->
+                <div class="info">
+                  <h4>HTML e CSS</h4>
+                  <address>Emanuele Manno</address>
+                  <div class="details">
+                    35.660 Visualizzazioni &middot; 1 mese fa
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Video relativo-->
+            <div class="related-videos">
+              <!--Card del video relativo-->
+              <div class="related-card">
+                <!--Immagine-->
+                <div class="thumb">
+                  <img src="./img/img-5.png" alt="" />
+                </div>
+                <!--Informazioni relative-->
+                <div class="info">
+                  <h4>Il corso che ho fatto</h4>
+                  <address>Emanuele Manno</address>
+                  <div class="details">
+                    525.087 Visualizzazioni &middot; 3 mesi fa
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
